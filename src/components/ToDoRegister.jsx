@@ -13,7 +13,7 @@ const ToDoRegister = () => {
       email: ''
     },
     onSubmit:(values)=>{
-      axios.post("https://todoapp-api.onrender.com/users", values)
+      axios.post("https://todoapp-backend-xgbn.onrender.com/users", values)
         .then(()=>{
           alert("User Registered Successfully");
           navigate("/login");

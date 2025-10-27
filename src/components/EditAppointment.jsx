@@ -16,7 +16,7 @@ const EditAppointment = () => {
       userid: appointment.userid
     },
     onSubmit: (appointment) => {
-      axios.put(`https://todoapp-api.onrender.com/appointments/${params.id}`, appointment)
+      axios.put(`https://todoapp-backend-xgbn.onrender.com/appointments/${params.id}`, appointment)
         .then(()=>{
           alert("Date Saved Successfully");
           navigate('/dashboard')
@@ -30,7 +30,7 @@ const EditAppointment = () => {
   })
 
   useEffect(()=>{
-    axios.get(`https://todoapp-api.onrender.com/appointments/${params.id}`)
+    axios.get(`https://todoapp-backend-xgbn.onrender.com/appointments/${params.id}`)
       .then(response => {
         setAppointment(response.data);
       })

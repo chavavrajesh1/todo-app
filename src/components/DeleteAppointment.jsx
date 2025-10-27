@@ -9,7 +9,7 @@ const DeleteAppointment = () => {
   const [appointment, setAppointment] = useState({});
 
   useEffect(() => {
-    axios.get(`https://todoapp-api.onrender.com/appointments/${params.id}`)
+    axios.get(`https://todoapp-backend-xgbn.onrender.com/appointments/${params.id}`)
       .then(response => {
         setAppointment(response.data);
       })
@@ -20,7 +20,7 @@ const DeleteAppointment = () => {
   }, [])
 
   function handleDeleteClick() {
-    axios.delete(`https://todoapp-api.onrender.com/appointments/${params.id}`)
+    axios.delete(`https://todoapp-backend-xgbn.onrender.com/appointments/${params.id}`)
       .then(() => {
         alert("Appointment Deleted Successfully");
         navigate("/dashboard");

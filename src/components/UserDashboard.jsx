@@ -16,7 +16,7 @@ const UserDashboard = () => {
       return;
     }
 
-    axios.get("https://todoapp-api.onrender.com/appointments")
+    axios.get("https://todoapp-backend-xgbn.onrender.com/appointments")
       .then(response => {
         let user_appointments = response.data.filter(
           appointment => appointment.userid === cookies['userid']

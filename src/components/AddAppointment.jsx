@@ -14,7 +14,7 @@ const AddAppointment = () => {
       userid: cookies['userid']
     },
     onSubmit: (appointment) => {
-      axios.post(`https://todoapp-api.onrender.com/appointments`, appointment)
+      axios.post(`https://todoapp-backend-xgbn.onrender.com/appointments`, appointment)
         .then(() => {
           alert("appointment added");
           navigate('/dashboard');
