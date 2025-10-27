@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userid": "john_nit",
+      "password": "john@nit",
+      "email": "john@gmail.com"
+    },
+    {
+      "id": "2",
+      "userid": "david",
+      "password": "david11",
+      "email": "david@outlook.com"
+    },
+    {
+      "id": "71e7",
+      "userid": "sanjay_nit",
+      "password": "sanjay11",
+      "email": "sanjay@gmail.com"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "title": "Samson Birthday",
+      "date": "2025-03-22",
+      "userid": "john_nit"
+    },
+    {
+      "id": "2",
+      "title": "Job Joining Date",
+      "date": "2025-04-01",
+      "userid": "david"
+    },
+    {
+      "title": "Attend Cousin birthday party",
+      "date": "2025-02-10",
+      "userid": "john_nit",
+      "id": "75a9"
+    }
+  ]
+}
